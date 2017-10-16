@@ -1,7 +1,7 @@
 $(document).ready(function() {
   /* global moment */
   // celebContainer holds all of our posts
-  var celebContainer = $(".celeb-container");
+  var celebContainer = $("#recent-predictions");
   // Click events for the edit and delete buttons
   // $(document).on("click", "button.delete", handlePostDelete);
   // $(document).on("click", "button.edit", handlePostEdit);
@@ -53,36 +53,27 @@ $(document).ready(function() {
   // This function constructs a post's HTML
   function createNewRow(post) {
     var newPostPanel = $("<div>");
-    newPostPanel.addClass("panel panel-default");
-    var newPostPanelHeading = $("<div>");
-    newPostPanelHeading.addClass("panel-heading");
-  
-    var newPostTitle = $("<h2>");
-    var newPostDate = $("<small>");
-    var newPostCategory = $("<h5>");
-    newPostCategory.text(post.category);
-    newPostCategory.css({
-      float: "right",
-      "font-weight": "700",
-      "margin-top":
-      "-15px"
-    });
+    newPostPanel.addClass("panel panel-default bg-inverse text-white");
 
     var newPostPanelBody = $("<div>");
     newPostPanelBody.addClass("panel-body");
-    var newPostBody = $("<p>");
-    newPostTitle.text(post.title + " ");
-    newPostBody.text(post.body);
-    var formattedDate = new Date(post.createdAt);
-    formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
-    newPostDate.text(formattedDate);
-    newPostTitle.append(newPostDate);
-    newPostPanelHeading.append(newPostTitle);
-    newPostPanelHeading.append(newPostCategory);
-    newPostPanelBody.append(newPostBody);
-    newPostPanel.append(newPostPanelHeading);
+  
+    var newPostCelebName = $("<h2>");
+    var newPostDateofDeath = $("<h4>");
+    var newPostCauseofDeath = $("<h4>");
+    var newPostUsername = $("<p>");
+
+    newPostCelebName.text(post.name);
+    newPostDateofDeath.text("predicted death date: " + post.deathdate);
+    newPostCauseofDeath.text("casue of death: " + post.causeofdeath);
+    newPostUsername.text("posted by: " + post.username);
+
+    newPostPanelBody.append(newPostCelebName);
+    newPostPanelBody.append(newPostDateofDeath);
+    newPostPanelBody.append(newPostCauseofDeath);
+    newPostPanelBody.append(newPostUsername);
     newPostPanel.append(newPostPanelBody);
-    newPostPanel.data("post", post);
+    newPostPanelBody.data("post", post);
     return newPostPanel;
   }
 
@@ -94,7 +85,7 @@ $(document).ready(function() {
     celebContainer.empty();
     var messageh2 = $("<h2>");
     messageh2.css({ "text-align": "center", "margin-top": "50px" });
-    messageh2.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
+    messageh2.html("No predictions yet, post yours above!");
     celebContainer.append(messageh2);
   }
 
