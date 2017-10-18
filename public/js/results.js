@@ -56,7 +56,7 @@ $(document).ready(function() {
     newPostPanel.addClass("panel panel-default bg-inverse text-white");
 
     var newPostPanelBody = $("<div>");
-    newPostPanelBody.addClass("panel-body");
+    newPostPanelBody.addClass("panel-body bg-inverse text-white");
   
     var newPostCelebName = $("<h2>");
     var newPostDateofDeath = $("<h4>");
@@ -72,7 +72,7 @@ $(document).ready(function() {
     newPostPanelBody.append(newPostDateofDeath);
     newPostPanelBody.append(newPostCauseofDeath);
     newPostPanelBody.append(newPostUsername);
-    newPostPanel.append(newPostPanelBody);
+    newPostPanel.prepend(newPostPanelBody);
     newPostPanelBody.data("post", post);
     return newPostPanel;
   }
