@@ -1,7 +1,6 @@
 var db = require("../models");
+var passport = require('passport');
 
-// Routes
-// =============================================================
 module.exports = function(app) {
 
   // GET route for getting all of the posts
@@ -26,28 +25,4 @@ module.exports = function(app) {
     });
   });
 
-  // DELETE route for deleting posts
-  // app.delete("/api/posts/:id", function(req, res) {
-  //   db.Celebrity.destroy({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   })
-  //   .then(function(dbCeleb) {
-  //     res.json(dbCeleb);
-  //   });
-  // });
-
-  // PUT route for updating posts
-  // app.put("/api/posts", function(req, res) {
-  //   db.Post.update(req.body,
-  //     {
-  //       where: {
-  //         id: req.body.id
-  //       }
-  //     })
-  //   .then(function(dbCeleb) {
-  //     res.json(dbCeleb);
-  //   });
-  // });
 };
