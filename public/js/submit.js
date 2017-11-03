@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var updating = false;
 
-  // Getting jQuery references to the post body, title, form, and category select
+  // Getting jQuery references to the post content
   var celebName = $("#name");
   var deathCause = $("#causeofdeath");
   var dateofDeath = $("#deathdate");
