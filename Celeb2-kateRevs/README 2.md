@@ -1,1 +1,0 @@
-# celebrity-death-pool
