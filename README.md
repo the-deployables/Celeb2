@@ -1,23 +1,24 @@
-#Celeb Death Pool
+<h1>Celeb Death Pool</h1>
 
-###NOTE: THIS WEBSITE'S CONTENT IS INTENDED AS SATIRE ONLY
+<h3>NOTE: THIS WEBSITE'S CONTENT IS INTENDED AS SATIRE ONLY</h3>
 
-##Description
+<h2>Description</h2>
 This app allows users to predict when famous people will die. It incorporates a Twitter feed to help inform predictions.
 
-##Motivation
+<h2>Motivation</h2>
 It’s fun! They’re people just like us, and they die, but we all have to hear about it in the media, so why not have some fun with it.
 
-##Results
+<h2>Results</h2>
 you tell us?
 
-##Team Efforts
+<h2>Team Efforts</h2>
+Kate - built views
 Jared - built models
 Brien - built controller
-Kate - built views
 
-##Challenges
+
+<h2>Challenges</h2>
 Building testing
 
-##Improvements
-Add a gambling option. Add more news/info sources beyond Twitter.
+<h2>Improvements</h2>
+Add a gambling option[joking]. Add more news/info sources beyond Twitter.
