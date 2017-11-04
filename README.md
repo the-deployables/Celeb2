@@ -1,6 +1,6 @@
 <h1>Celeb Death Pool</h1>
 
-<h3>NOTE: THIS WEBSITE'S CONTENT IS INTENDED AS SATIRE ONLY</h3>
+<h3>NOTE: THE CONTENT OF THIS WEBSITE IS INTENDED AS SATIRE ONLY</h3>
 
 <h2>Description</h2>
 This app allows users to predict when famous people will die. It incorporates a Twitter feed to help inform predictions.
